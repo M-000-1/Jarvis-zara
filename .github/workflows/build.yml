@@ -21,6 +21,10 @@ jobs:
           distribution: temurin
           java-version: '17'
 
+      - name: Set Java target to 17
+        run: |
+          printf '\nandroid {\n    compileOptions {\n        sourceCompatibility = JavaVersion.VERSION_17\n        targetCompatibility = JavaVersion.VERSION_17\n    }\n}\n' >> project/app/build.gradle.kts
+
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
