@@ -13,7 +13,7 @@ jobs:
 
       - name: Extract project ZIP
         run: |
-          unzip -o JARVIS_ZARA_All_Modules_v4.zip -d project
+          unzip -o JARVIS_ZARA_All_Modules_v6.zip -d project
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
